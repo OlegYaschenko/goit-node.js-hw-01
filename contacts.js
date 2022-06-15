@@ -5,7 +5,6 @@ const contactsPath = path.join(__dirname, "db", "contacts.json");
 
 const { v4: uuidv4 } = require("uuid");
 
-// TODO: задокументировать каждую функцию
 async function listContacts() {
   const data = await fs.readFile(contactsPath);
   const contacts = JSON.parse(data);
